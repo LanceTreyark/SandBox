@@ -51,8 +51,8 @@ echo "$zfilename"
 echo ""
 echo "Sending to remote server via scp"
 scp $zfilename $exportAddr:/tmp/$zfilename
-echo "Now that the file has been exported the script will automatically remove that $zfilename file"
-read -p "Press enter to proceed or ctrl+c to keep the file and abort the delete" x
+echo "$zfilename will now be removed"
+read -p "Press enter to proceed, or ctrl+c abort" x
 rm $zfilename
 echo "The script has concluded"
 echo "Bye"
