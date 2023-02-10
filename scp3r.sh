@@ -45,7 +45,7 @@ cd $filePath
 echo "Compressing file $fileName into $zfilename"                                                                                                                                                                                                                    
 echo ""
 sleep 1
-sudo tar -zcvf $zfilename $fileName
+tar -zcvf $zfilename $fileName
 sleep 2
 echo "$zfilename"
 echo ""
