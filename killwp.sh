@@ -9,7 +9,7 @@ echo "Press Enter to continue..."
 read -s -p ""
 echo "enter the full path to the public_html directory"
 read -p "ie:/var/www/pck.treyark.com/public_html/:  " wpPathToKill
-read -p "Please enter the domain name to use for this new site, Don't add the 'www':   " var_DomainName
+read -p "Please enter the domain name to use for this site, Don't add the 'www':   " var_DomainName
 echo " "
 read -p "We will be creating a new database, enter the database name you would like to use:   " var_DatabaseName
 echo " "
@@ -37,7 +37,7 @@ echo " "
 sudo ls -n $wpPathToKill
 sleep 1
 sudo rm -r $wpPathToKill
-sudo mkdir /var/www/pck.treyark.com/public_html
+sudo mkdir $wpPathToKill
 sudo ls -n $wpPathToKill
 sleep 1
 # check if the details are correct, if so echo "great!" and proceed,
